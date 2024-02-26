@@ -42,6 +42,11 @@ async function automate(url) {
   }
 }
 
+// Test Routes
+
+app.get('/test', (req, res) => {
+  res.send('API is Working Properly')
+})
 // Endpoint to trigger the automation
 app.post("/trigger-automation", async (req, res) => {
   const { url } = req.body;
